@@ -10,10 +10,14 @@
  
  Another friend brings up a restaurant she thinks will fit both of your criteria. This restaurant's attributes are represented by a few constants below. Write an if-else statement that will print "Let's go!" if the restaurant's attributes match the group's dietary requirements, and otherwise will print "Sorry, we'll have to think of somewhere else." (.5 points)
  */
-let hasFish = true
-let hasPizza = false
+let hasFish = false
+let hasPizza = true
 let hasVegan = true
-
+if (hasFish || hasPizza) && hasVegan {
+    print("Let's go!")
+}else{
+    print("Sorry, we'll have to think of somewhere else.")
+}
 
 /*:
  Imagine you're trying to decide whether or not to go on a walk. You decide that you'll go on a walk if it's not raining or if it's 82 degress or warmer and NOT windy. Create a constant `walkingWeather` that is equal to an expression that evaluates to a boolean indicating whether or not the weather is nice enough for you to go for a walk. Write an if statement that will print "I'm going for a walk!" if the weather is nice. (1 points)
@@ -26,7 +30,7 @@ let hasVegan = true
 let temp = 82
 let isRaining = true
 let isWindy = false
-/* Set 2
+/*Set 2
 let temp = 82
 let isRaining = true
 let isWindy = true
@@ -38,6 +42,13 @@ let isWindy = true
 */
 
 //insert your code here!!
+let walkingWeather = (temp >= 82 && !isWindy)
+if walkingWeather {
+    print("I'm going for a walk!")
+}
 
 //insert print statements here!!
+print("I will go for a walk for the first set of conditions")
+print("I will not go for a walk for the second set of conditions")
+print("I will not go for a walk for the third set of conditons")
 //: [Previous](@previous)  |  page 4 of 9  |  [Next](@next)
